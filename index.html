@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        .container .row img {
+            height: 250px;
+        }
+        .container .one img {
+            height: 600px;
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="carousel-slide one" id="carouselID" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button class="active" data-bs-target="#carouselID" data-bs-slide-to="0"></button>
+                <button  data-bs-target="#carouselID" data-bs-slide-to="1"></button>
+                <button  data-bs-target="#carouselID" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/image1.jpg" alt="" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/image2.jpg" alt="" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/image3.jpg" alt="" class="d-block w-100">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" data-bs-target="#carouselID" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+            <button class="carousel-control-next" data-bs-target="#carouselID" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+        <br><br><br><br><br><br><br>
+
+
+        <div class="text-center text-success"><h1>Can test our products</h1></div><br>
+        <div class="row">
+            <div class="card col-4 p-4 g-3"><img src="image/image1.jpg" alt="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat consequuntur exercitationem, voluptate itaque voluptatum culpa.</div>
+            <div class="card col-4 p-4 g-3"><img src="image/image2.jpg" alt="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est laudantium labore reprehenderit maxime, odio voluptas.</div>
+            <div class="card col-4 p-4 g-3"><img src="image/image3.jpg" alt="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis alias, maxime omnis harum sit nisi?</div>
+        </div>
+        <br><br>
+
+
+        <div class="row">
+            <div class="card col-4 p-4 g-3"><img src="image/image1.jpg" alt="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia qui enim, minima eum quo earum.</div>
+            <div class="card col-4 p-4 g-3"><img src="image/image2.jpg" alt="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, officiis inventore eum doloremque similique libero.</div>
+            <div class="card col-4 p-4 g-3"><img src="image/image3.jpg" alt="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto repudiandae fugit maiores neque aspernatur illo!</div>
+        </div><br><br><br><br><br><br>
+
+        <div class="text-center text-primary"><h1><b><i>Contact Form</i></b></h1></div>
+        <br><br>
+        <form action="" class="needs-validation mb-5" novalidate>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="firstName" class="form-label mb-1">first name</label>
+                    <input type="text" class="form-control" placeholder="first name" id="firstName" required>
+                    <div class="valid-feedback">
+                        <p>valid your first name</p>
+                    </div>
+                    <div class="invalid-feedback">
+                        <p>enter your first name</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="lastName" class="form-label mb-1">last name</label>
+                    <input type="text" class="form-control" placeholder="last name" id="lastName" required>
+                    <div class="valid-feedback">
+                        <p>valid your last name</p>
+                    </div>
+                    <div class="invalid-feedback">
+                        <p>enter your last name</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="col-md-12">
+                <label for="address1" class="form-label mb-1">address1</label>
+                <input type="text" class="form-control" placeholder="1234 main st." id="address1" required>
+                <div class="valid-feedback">
+                    <p>valid your first address</p>
+                </div>
+                <div class="invalid-feedback">
+                    <p>enter your second address</p>
+                </div>
+            </div>
+            <br>
+            <div class="col-md-12">
+                <label for="address2" class="form-label mb-1">address2</label>
+                <input type="text" class="form-control" placeholder="apartment studio or floor" id="address2" required>
+                <div class="valid-feedback">
+                    <p>valid your second address</p>
+                </div>
+                <div class="invalid-feedback">
+                    <p>enter your second address</p>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="city" class="form-label mb-1">city</label>
+                    <input type="text" class="form-control" placeholder="city" id="city" required>
+                    <div class="valid-feedback">
+                        <p>your city is valid</p>
+                    </div>
+                    <div class="invalid-feedback">
+                        <p>enter your city</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="state" class="form-label mb-1">state</label>
+                    <select name="" id="" class="form-select" required>
+                        <option value="" selected>choose</option>
+                        <option value="">dhaka</option>
+                        <option value="">rajshahi</option>
+                        <option value="">natore</option>
+                        <option value="">bogra</option>
+                    </select>
+                    <div class="valid-feedback">
+                        <p>choose invalid option</p>
+                    </div>
+                    <div class="invalid-feedback">
+                        <p>choose valid option</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="zip" class="form-label mb-1">zip</label>
+                    <input type="number" class="form-control" placeholder="zip" id="zip" required>
+                </div>
+                <div class="valid-feedback">
+                    <p>valid zip</p>
+                </div>
+                <div class="invalid-feedback">
+                    <p>enter valid zip</p>
+                </div>
+            </div>
+            <br>
+
+            <div class="col-md-12">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="check" required>
+                    <label for="check" class="form-check-label">check me out</label>
+                    <div class="valid-feedback">
+                        <p>ok valid option</p>
+                    </div>
+                    <div class="invalid-feedback">
+                        <p>you must agree before submitting</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="col-md-12">
+                <button class="btn btn-primary">submit</button>
+            </div>
+
+
+        </form>
+    </div>
+
+
+
+    </div>
+</body>
+</html>
